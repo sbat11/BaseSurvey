@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Registration Form</title>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <h1 id="title">General Survey</h1>
+    <p id="description">Answer all the questions below</p>
+    <form id="survey-form">
+      <fieldset>
+        <label id="name-label">Enter your Name: <input id="name" type="text" placeholder="Enter here:" required></label><br>
+        <label id="email-label">Enter your Email: <input id="email" type="email" placeholder="Enter here:" required><br></label>
+        <label id="number-label">Enter your Phone Number<input id="number" type="number" min="0000000000" max="9999999999" placeholder="Enter here:"><br></label>
+      </fieldset> 
+      <fieldset>
+        <label id="age">Under 13<input id="Below13" type="radio"  value="1" name="age"><br></label>
+        <label id="age" >13-17<input id="Below13" type="radio" value="2" name="age"> <br></label>
+        <label id="age">Over 18<input id="Below13" type="radio" value="3" name="age"><br></label>
+      </fieldset>
+      <fieldset>
+        <p>Household Income:<p>
+        <label>Below 50,000<input type="checkbox" id="Below50k" value="1"></label><br>
+        <label>50,000 - 100,000<input type="checkbox" id="50k-100k" value="2"></label><br>
+        <label>100,000 - 200,000<input type="checkbox" id="100k-200k" value="3"></label><br>
+        <label>Over 200,000<input type="checkbox" id="Over200k" value="4"></label>
+      </fieldset>
+      <fieldset>
+        <label>Select your state from the tri-state area or select "Other": </label>
+        <select id="dropdown" name="drowpdown">
+          <option value="">(select one)</option>
+          <option value="1">NY</option>
+          <option value="2">NJ</option>
+          <option value="3">CT</option>
+          <option value="4">Other</option>
+        </select>
+      </fieldset>
+      <fieldset>
+        <label> Please explain any concerns down below:<br><textarea id="concerns" name="concerns" placeholder="Enter in list form"></textarea>
+      </fieldset>
+      <input id="submit" type="submit" value="submit">
+    </form>
+  </body>
+</html>
